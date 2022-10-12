@@ -1,0 +1,125 @@
+/* For Gallery Cards Page */
+
+.GalleryCards .cards-container {
+    margin: 30px 10px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .GalleryCards .cards {
+    flex: 0 1 24%;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    position: relative;
+    /* max-width: 262px; */
+    height: 500px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .GalleryCards .cards:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+  
+  .GalleryCards .cards:hover:before {
+    transform: scale(2.15);
+  }
+  
+  .GalleryCards .cards-image img {
+    height: 150%;
+    width: 100%;
+  }
+  
+  .GalleryCards .cards-image img {
+    height: 150%;
+    width: 100%;
+  }
+  
+  /* .projectsCard .cards-image img:hover {
+    width: 100%;
+  } */
+  
+  .GalleryCards .cards-text {
+    margin: 30px 2px 2px 2px;
+    text-align: center;
+  }
+  
+  .GalleryCards .btn{
+    margin-top:20px;
+  }
+
+  /* For Single Gallery Page */
+  
+  .SingleGallery .my-masonry-grid {
+    /* display: -webkit-box; 
+    display: -ms-flexbox;  */
+    display: flex;
+    /* flex-direction: column; */
+    margin:20px auto;
+    width: auto;
+  }
+
+  .SingleGallery .image-list{
+    display: flex;
+    width: 300px;
+    margin: 20px 0;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.12);
+  }
+
+  .SingleGallery .image-list img{
+    display: flex;
+    width: 100%;
+  }
+
+
+  .SingleGallery .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+   .SingleGallery.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  /* For Responsiveness */
+  
+  @media screen and (max-width: 992px) {
+    .banner {
+      height: 40vh;
+    }
+  
+    .projectCard  .cards-container {
+      flex-wrap: wrap;
+    }
+  
+    .projectCard  .card-container {
+        flex-wrap: wrap;
+      }
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    /* For Projects Page */
+    .projectCard  .cards-container{
+      margin: auto;
+    }
+    .projectCard  .cards {
+      margin: 20px;
+    }
+  }
